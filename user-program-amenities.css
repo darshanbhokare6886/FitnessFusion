@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+
+:root {
+  --primary-color: #f92524;
+  --primary-color-dark: #e91a1a;
+  --secondary-color: #faf9fe;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black; /* Set background color to black */
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.section__header::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.trainer__container :is(.section__header, .section__description) {
+  width: fit-content;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.trainer__container .section__header::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__description {
+  max-width: 900px;
+  color: var(--white);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header__container {
+  display: grid;
+  gap: 2rem;
+}
+
+
+.header__content h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+.header__content .section__header {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+
+
+.class__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.class__card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.class__card .class__bg {
+  position: absolute;
+  max-width: 175px;
+  top: -3rem;
+  right: -1rem;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.class__card:hover .class__bg {
+  opacity: 10;
+}
+
+.class__card:hover {
+  transform: translateY(-10px);
+}
+
+.class__content {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.class__content h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+@media (width > 480px) {
+  .class__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+}
+
+@media (width > 768px) 
+{
+  .class__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media (width > 1024px) {
+  .class__grid {
+    gap: 2rem;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+#workout-title {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  font-size: 7em;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0%;
+  position: relative; /* Added */
+}
+
+#desc {
+  position: absolute; /* Added */
+  bottom: -30px; /* Added */
+  left: 50%; /* Added */
+  transform: translateX(-50%); /* Added */
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}

@@ -1,0 +1,124 @@
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Image hover effect */
+.img-hover:hover {
+  transform: scale(1.05); /* Increase scale on hover */
+}
+/* Section hover effect */
+.section-hover:hover {
+  background-color: #ff4500; /* Lighter orange-red background on hover */
+}
+/* Navbar background */
+.navbar {
+  background-color: #000; /* Black background for the navbar */
+}
+/* Active page color */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff4500 !important; /* Orange-red color for the active page */
+}
+/* Hover color for the navigation items */
+
+.navbar-nav .nav-link:hover {
+  color: #ff4500 !important; /* Add !important for higher specificity */
+}
+
+/* Align items in navbar */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust spacing between items */
+}
+.navbar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.icons a:hover i {
+  color: #ff5e00; /* Hover color (blue) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+.container {
+  position: relative;
+}
+
+#workout-title {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  font-size: 7em;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0%;
+  position: relative; /* Added */
+}
+
+#desc {
+  position: absolute; /* Added */
+  bottom: -30px; /* Added */
+  left: 50%; /* Added */
+  transform: translateX(-50%); /* Added */
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* body {
+  /* margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* .icons{
+height: 25px;
+width: 25px;
+} */
+
+/* new content css */
+
+section {
+  margin-top: 30px;
+}
+
+section h2 {
+ color: rgb(76, 73, 98);
+
+}
+.section-hover {
+  color: #000000; /* Change color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.content {
+  padding: 90px;
+}
+
+p {
+  text-align: justify;
+}

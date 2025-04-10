@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+
+.container {
+  position: relative;
+}
+
+#workout-title {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  font-size: 7em;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0%;
+  position: relative; /* Added */
+}
+
+#desc {
+  position: absolute; /* Added */
+  bottom: -30px; /* Added */
+  left: 50%; /* Added */
+  transform: translateX(-50%); /* Added */
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+
+
+#lets-title {
+  color: orangered;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 3vh; /* Adjust font size for responsiveness */
+  margin-top: 5vh; /* Adjust margin for responsiveness */
+}
+
+
+
+
+/* new bhupesh */
+
+.img-box
+{
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 2rem;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: 0.05rem 1rem rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  height: 480px; /* Adjust the height to make the button more visible */
+}
+
+.card-content {
+  position: absolute;
+  background-color: rgb(0 0 0 / 50%);
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 2.2rem 0;
+  overflow: hidden;
+  transition: 0.7s;
+  height: 35%; /* Adjust the height of the content area */
+}
+
+.card-content h1
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-content
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 1.2rem;
+}
+
+
+
+.card-content:hover {
+  height: 60%;
+  transition: 0.7s;
+}
+
+.read-more-btn {
+  display: inline-block;
+    padding: 8px 16px;
+    background-color: orangered;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: orange;
+}
+
+
+/* responsive */
+
+@media (max-width: 1024px)
+{
+    .grid
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 767px)
+{
+    .grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.card {
+  background-color: black;
+  color: white;
+  border: 0.5px solid white;
+  transition: transform 0.3s ease;
+  margin-bottom: 2vh; /* Adjust margin for responsiveness */
+  height: 500px; /* Set a fixed height for the cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  height: 300px; /* Set a fixed height for the images */
+  width: 100%; /* Ensure images take up full width of the card */
+  object-fit: cover; /* Maintain aspect ratio of the images */
+}
+
+/* ///// */
+
+.navbar-nav .nav-link:hover {
+  color: orangered !important;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000; /* Black background for the navbar */
+}
+/* Active page color */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff4500 !important; /* Orange-red color for the active page */
+}
+/* Hover color for the navigation items */
+
+.navbar-nav .nav-link:hover {
+  color: #ff4500 !important; /* Add !important for higher specificity */
+}
+
+/* Align items in navbar */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust spacing between items */
+}
+.navbar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.icons a:hover i {
+  color: #ff5e00; /* Hover color (blue) */
+}

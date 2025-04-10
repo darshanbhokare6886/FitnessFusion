@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.price__card {
+  /* existing styles */
+  background-color: rgba(255, 255, 255, 0.25); /* initial background color */
+  transition: background-color 0.3s ease-in-out; /* add transition for smooth effect */
+}
+
+.price__card:hover {
+  background-color: white; /* change background color on hover */
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black; /* Apply black background color */
+  color: var(--text-dark);
+}
+
+
+.price__card {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Apply glass effect */
+  backdrop-filter: blur(20px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  background-color: rgb(255,255,255,0.1); /* Apply transparency */
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.price__card:hover {
+  transform: translateY(-10px); /* Add hover effect */
+}
+
+
+:root {
+--primary-color: #f92524;
+--primary-color-dark: #e91a1a;
+--secondary-color: #faf9fe;
+--text-dark: #0f172a;
+--text-light: #64748b;
+--white: #ffffff;
+--max-width: 1200px;
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.section__container {
+max-width: var(--max-width);
+margin: auto;
+padding: 5rem 1rem;
+}
+
+.section__header {
+position: relative;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+font-size: 2.25rem;
+font-weight: 600;
+color: var(--white);
+}
+
+.section__header::after {
+position: absolute;
+content: "";
+left: 0;
+bottom: 0;
+width: 50px;
+height: 3px;
+background-color: var(--primary-color);
+}
+
+.section__description {
+max-width: 900px;
+color: var(--white);
+}
+
+.btn {
+padding: 0.75rem 1.5rem;
+outline: none;
+border: none;
+font-size: 1rem;
+white-space: nowrap;
+color: var(--white);
+background-color: var(--primary-color);
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: var(--primary-color-dark);
+}
+
+img {
+display: flex;
+width: 100%;
+}
+
+a {
+text-decoration: none;
+white-space: nowrap;
+}
+
+html,
+body {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.price__container :is(.section__header, .section__description) {
+width: fit-content;
+margin-inline: auto;
+text-align: center;
+}
+
+.price__container .section__header::after {
+left: 50%;
+transform: translateX(-50%);
+}
+
+.price__grid {
+margin-top: 4rem;
+display: grid;
+gap: 2rem;
+}
+
+.price__card {
+padding: 2rem 1rem;
+display: flex;
+flex-direction: column;
+text-align: center;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price__content {
+flex: 1;
+margin-bottom: 2rem;
+}
+
+.price__content img {
+max-width: 70px;
+margin-inline: auto;
+margin-bottom: 1rem;
+}
+
+.price__content h4 {
+margin-bottom: 1rem;
+font-size: 1.2rem;
+font-weight: 600;
+color: var(--primary-color);
+}
+
+.price__content p {
+margin-bottom: 1rem;
+color: var(--text-light);
+}
+
+.price__content hr {
+margin-bottom: 1rem;
+}
+
+
+
+
+@media (width > 480px) {
+.class__grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem 1rem;
+}
+
+.price__grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem 1rem;
+}
+}
+
+@media (width > 768px) 
+{
+.class__grid {
+grid-template-columns: repeat(4, 1fr);
+}
+
+.price__grid {
+grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+@media (width > 1024px) {
+.class__grid {
+gap: 2rem;
+}
+
+.price__grid {
+gap: 2rem;
+}
+
+.price__card {
+padding: 2rem;
+}
+}
+
+.container {
+  position: relative;
+}
+
+#workout-title {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  font-size: 7em;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0%;
+  position: relative; /* Added */
+}
+
+#desc {
+  position: absolute; /* Added */
+  bottom: -30px; /* Added */
+  left: 50%; /* Added */
+  transform: translateX(-50%); /* Added */
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-transform:uppercase;
+}
